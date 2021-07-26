@@ -1,9 +1,49 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Google</title>
+        <title>My Google</title>
+        <style>
+            .center {
+                text-align: center;
+            }
+
+            #searchbox{
+                height: 40px;
+                font-size: 12pt;
+                border-radius: 25px;
+                border-color: lightgray;
+                padding-left: 15px;
+            }
+
+            img {
+                padding-top: 15%;
+                padding-bottom: 20px;
+            }
+
+            button {
+                margin-top: 20px;
+                padding: 10px 15px 10px 15px;
+                border: 1px solid lightgray;
+            }
+
+            button:hover {
+                border: 1px solid darkgrey;
+            }
+
+            input#searchbox:focus {
+                outline-width: 0;
+            }
+        </style>
     </head>
     <body>
-        <h1>Google Homepage</h1>
+        <div class="center">
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            <form>
+                <input id="searchbox" type="text" size="60">
+                <br>
+                <button type="button">Google Search</button>
+                <button type="button">I'm Feeling Lucky</button>
+            </form>
+        </div>
     </body>
 </html>
